@@ -37,17 +37,17 @@ documentation:
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:
 
-  -disp_type
-  -fmt 
-	-prog 
-  -adjust 
+  - disp_type
+  - fmt 
+  - prog 
+  - adjust 
 
 # A description of what the outputs do (e.g. status LED, SPI MISO, etc)
   outputs:
     - ampm
-	  - segments_
-	  - [4:2] disp_select_
-	  - [7:5]  segment_select_
+    - segments_
+    - [4:2] disp_select_ 
+    - [7:5]  segment_select_
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
     - none
