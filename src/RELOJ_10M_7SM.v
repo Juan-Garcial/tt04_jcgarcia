@@ -1,25 +1,3 @@
-`timescale 1ns / 1ps
-//////////////////////////////////////////////////////////////////////////////////
-// Company: 
-// Engineer: 
-// 
-// Create Date: 03.08.2023 19:35:24
-// Design Name: 
-// Module Name: RELOG_10M
-// Project Name: 
-// Target Devices: 
-// Tool Versions: 
-// Description: 
-// 
-// Dependencies: 
-// 
-// Revision:
-// Revision 0.01 - File Created
-// Additional Comments:
-// 
-//////////////////////////////////////////////////////////////////////////////////
-`define USE_POWER_PINS
-
 module tt_um_RELOG_10M_Juan_Garcial(
 	    input  wire [7:0] ui_in,    // Dedicated inputs - connected to the input switches
 	    output wire [7:0] uo_out,   // Dedicated outputs - connected to the 7 segment display
