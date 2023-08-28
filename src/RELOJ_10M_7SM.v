@@ -21,17 +21,35 @@
 `define USE_POWER_PINS
 
 module tt_um_RELOG_10M_Juan_Garcial(
-    input clk,
-    input rst,
-    input disp_type,
-    input fmt,
-    input prog,
-    input adjust,
-    output ampm,
-    output reg segments_,
-    output [2:0] disp_select_, 
-    output [2:0] segment_select_
-    );
+	    input  wire [7:0] ui_in,    // Dedicated inputs - connected to the input switches
+	    output wire [7:0] uo_out,   // Dedicated outputs - connected to the 7 segment display
+	    input  wire [7:0] uio_in,   // IOs: Bidirectional Input path
+	    output wire [7:0] uio_out,  // IOs: Bidirectional Output path
+	    output wire [7:0] uio_oe,   // IOs: Bidirectional Enable path (active high: 0=input, 1=output)
+	    input  wire       ena,      // will go high when the design is enabled
+	    input  wire       clk,      // clock
+	    input  wire       rst_n     // reset_n - low to reset 
+);
+
+     	assign  rst= rst_n;
+	assign disp_type = uio_in[0];
+	assign fmt =  uio_in[1];
+	assign prog = uio_in[2];
+	assign adjust = uio_in[3];
+	assign uio_out[0] = ampm;
+	assign uio_out[1] = segments_;
+	assign uio_out[4:2] = disp_select_;
+	assign uio_out[7:5] = segment_select_;
+    	wire rst;
+    	wire disp_type,
+    	wire fmt,
+    	wire prog,
+    	wire adjust,
+    	reg ampm,
+	reg segments_,
+	reg [2:0] disp_select_, 
+	reg [2:0] segment_select_
+		
     
     assign disp_select_ = disp_select;
     assign segment_select_ = segment_select;
