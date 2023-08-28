@@ -8,7 +8,8 @@ module tt_um_RELOG_10M_Juan_Garcial(
 	    input  wire       clk,      // clock
 	    input  wire       rst_n     // reset_n - low to reset 
 );
-
+        assign uio_oe = 0;
+	assign uo_out = 0;
      	assign  rst= rst_n;
 	assign disp_type = uio_in[0];
 	assign fmt =  uio_in[1];
