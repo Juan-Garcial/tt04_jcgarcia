@@ -19,14 +19,14 @@ module tt_um_RELOG_10M_Juan_Garcial(
 	assign uio_out[4:2] = disp_select_;
 	assign uio_out[7:5] = segment_select_;
     	wire rst;
-    	wire disp_type,
-    	wire fmt,
-    	wire prog,
-    	wire adjust,
-    	reg ampm,
-	reg segments_,
-	reg [2:0] disp_select_, 
-	reg [2:0] segment_select_
+    	wire disp_type;
+    	wire fmt;
+    	wire prog;
+    	wire adjust;
+    	reg ampm;
+	reg segments_;
+	reg [2:0] disp_select_; 
+	reg [2:0] segment_select_;
 		
     
     assign disp_select_ = disp_select;
