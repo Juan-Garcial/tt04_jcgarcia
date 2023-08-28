@@ -39,8 +39,8 @@ documentation:
   outputs:
     - ampm
     - segments_
-    - [4:2] disp_select_
-    - [7:5] segment_select_
+    - disp_select_
+    - segment_select_
 # A description of what the bidirectional I/O pins do (e.g. I2C SDA, I2C SCL, etc)
   bidirectional:
     - none
