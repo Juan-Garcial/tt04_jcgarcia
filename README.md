@@ -12,9 +12,13 @@ Programming this clock is as intuitive as it is powerful. Equipped with two butt
 
 The design of the clock is based on a scheme similar to the one illustrated in Figure 1. Since the available resources are limited, the decision was made to implement 2 cascading frequency dividers. The first divider, with a ratio of 5000 to 1, generates the clock signal used for segment scanning and also serves as the input for the second frequency divider, which operates at a ratio of 2000 to 1. Together, these two cascading dividers generate a total ratio of 10,000,000 to 1. This ratio is particularly useful considering that the base clock frequency is 10MHz, resulting in a 1Hz signal used to synchronize the movement of the clock's second hand.
 
+![figure 1: general block diagram](clk_diagramam.png "Figure 1: general block diagram")
+
 With the aim of optimizing space, the decision was made to employ multiplexing instead of implementing a Binary-Coded Decimal (BCD) to 7-segment display converter for each of the clock's digits. Through this multiplexing technique, the display to be shown at a given moment is selected, which in turn reduces the number of output pins needed to control the displays. This becomes especially advantageous since the maximum number of available pins is 8.
 
-Despite the proposed multiplexing strategy for the output ports, the total number of pins required for this configuration remains high. To address this limitation, a configuration was chosen where bit scanning is performed. In other words, at each moment in time, only one segment is turned on, resulting in a dimming of each segment's brightness due to its intermittent activation.
+Despite the proposed multiplexing strategy for the output ports, the total number of pins required for this configuration remains high. To address this limitation, a configuration was chosen where bit scanning is performed (see figure 2). In other words, at each moment in time, only one segment is turned on, resulting in a dimming of each segment's brightness due to its intermittent activation.
+
+!["figure 2: bit scanning"](clk_diagramam_MUX.png "Figure 2: bit scanning")
 
 This intermittent lighting feature allows for keeping the use of pins to a minimum, albeit with the trade-off that the segments will not be continuously lit.
 
