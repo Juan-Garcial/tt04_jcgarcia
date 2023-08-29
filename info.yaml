@@ -21,10 +21,10 @@ documentation:
   description:  "CLK OF 7 SEGMENTS"      # Short description of what your project does
 # Longer description of how the project works. You can use standard markdown format.
   how_it_works: |
-  "There is a frequency divider from 10Mhz to 1Hz, the ampm output can be connected to a led, this output will be set to 1 in the format of 12hrs past the meridian, for the segments output it will indicate how each segment should be turned on, segment select will indicate which segment should be turned on and disp select selects the display to be enabled"
+"There is a frequency divider from 10Mhz to 1Hz, the ampm output can be connected to a led, this output will be set to 1 in the format of 12hrs past the meridian, for the segments output it will indicate how each segment should be turned on, segment select will indicate which segment should be turned on and disp select selects the display to be enabled"
 # Instructions on how someone could test your project, include things like what buttons do what and how to set the clock if needed
   how_to_test: |
-  "make the circuit"
+"make the circuit"
 # A description of what the inputs do (e.g. red button, SPI CLK, SPI MOSI, etc).
   inputs:
   - disp_type
