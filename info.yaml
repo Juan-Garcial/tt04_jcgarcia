@@ -15,10 +15,10 @@ yaml_version: 4
 # it does and how to operate it. This info will be automatically collected and used to make a datasheet for the chip.
 # Here is a great example: https://github.com/davidsiaw/tt02-davidsiaw-stackcalc/blob/38c5647f83aad2aec675d566aa3d67b98f0aac81/info.yaml
 documentation: 
-  author:       "Juan Carlos Garcia"      # Your name
-  title:        "7 segments CLK"      # Project title
+  author:       "Juan_Carlos_Garcia"      # Your name
+  title:        "7_segments_CLK"      # Project title
   language:     "verilog" # other examples include Verilog, Amaranth, VHDL, etc
-  description:  "CLK OF 7 SEGMENTS"      # Short description of what your project does
+  description:  "CLK_OF_7_SEGMENTS"      # Short description of what your project does
 # Longer description of how the project works. You can use standard markdown format.
     how_it_works: |
       Explain how your project works
