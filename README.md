@@ -1,12 +1,14 @@
 ![](../../workflows/gds/badge.svg) ![](../../workflows/docs/badge.svg) ![](../../workflows/wokwi_test/badge.svg)
 
-# What is Tiny Tapeout?
+# A clock based on seven segments displays 
 
-TinyTapeout is an educational project that aims to make it easier and cheaper than ever to get your digital designs manufactured on a real chip!
+The heart of this project is a 7-segment clock that provides the display of hours, minutes, and seconds in a clear and readable format. With the ability to choose between a 12-hour or 24-hour format, users have complete control over how they want to perceive time. This feature is especially useful for those who prefer the convenience of one format or the precision of another.
 
-Go to https://tinytapeout.com for instructions!
+However, customization doesn't stop there. This clock puts the power of choice in the hands of the users by allowing them to select whether they want the displays to be of common anode or common cathode type. This feature is crucial as it provides flexibility in the clock interface and caters to the individual preferences of each user.
 
-## How to change the Wokwi project
+Programming this clock is as intuitive as it is powerful. Equipped with two buttons, the user can navigate through the configuration menu and adjust the time accurately and easily.
+
+## Architecture
 
 Edit the [info.yaml](info.yaml) and change the wokwi_id to match your project.
 
