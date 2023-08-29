@@ -19,6 +19,7 @@ documentation:
   title:        "7_segments_CLK"      # Project title
   language:     "verilog" # other examples include Verilog, Amaranth, VHDL, etc
   description:  "CLK_OF_7_SEGMENTS"      # Short description of what your project does
+  
 # Longer description of how the project works. You can use standard markdown format.
     how_it_works: |
       Explain how your project works
